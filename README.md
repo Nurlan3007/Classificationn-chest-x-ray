@@ -40,6 +40,33 @@ datasets/
 - Implemented using **PyTorch** and **Torchvision**.
 - CNN and transfer learning approaches (e.g., ResNet18) were tested.
 - Fine-tuning was applied with weighted loss to handle class imbalance.
+  
+1. Convolutional Layers
+Purpose: Extract spatial features from images
+Implementation: 3×3 kernels with padding=1
+Result: Hierarchical feature learning (edges → textures → patterns)
+2. Batch Normalization
+Purpose: Normalize layer inputs for stable training
+Implementation: After each convolutional layer
+Result: Faster convergence, higher learning rates possible
+3. Pooling Layers
+Purpose: Reduce spatial dimensions, provide translation invariance
+Implementation: MaxPool2d(2, 2) - reduces size by half
+Result: Computational efficiency, robustness to small translations
+4. Activation Functions
+Purpose: Introduce non-linearity
+Implementation: ReLU(inplace=True)
+Result: Enables learning of complex patterns
+5. Dropout
+Purpose: Regularization to prevent overfitting
+Implementation: Dropout(0.5) and Dropout(0.3)
+Result: Better generalization to unseen data
+6. Data Augmentation
+Purpose: Increase training data diversity
+Implementation: Random transformations during training
+Result: Improved model robustness and generalization
+
+
 
 ---
 
