@@ -2,6 +2,8 @@
 
 ## link for database: https://drive.google.com/file/d/1CPZM7OmIJUaAJhAP460Epcfu2xonW4uA/view?usp=sharing
 
+## Metrics report находиться в конце файла main.ipynb
+
 ## Overview
 This project aims to build a deep learning model capable of classifying chest X-ray images into three categories:  
 **Normal**, **Pneumonia**, and **Tuberculosis**.  
