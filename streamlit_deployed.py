@@ -45,7 +45,7 @@ num_classes = 3
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = CustomCNN(num_classes=num_classes).to(device)
 
-best_path = "C:/Users/HP/Desktop/finalAML/best_model/best23.pth"
+best_path = "C:/Users/HP/Desktop/finalAML/best_model/best34.pth"
 
 checkpoint = torch.load(best_path, map_location=device)
 model.load_state_dict(checkpoint['model_state_dict'])
@@ -71,7 +71,7 @@ if uploaded_file:
         outputs = model(img_tensor)
         _, predicted = torch.max(outputs, 1)
 
-    classes = ["Бенign", "Пневмония", "COVID"]  # замени на свои классы
+    classes = ["Норм", "Пневмония", "Туберкулез"]  # замени на свои классы
     st.write(f"Предсказанный диагноз: **{classes[predicted.item()]}**")
 
 
