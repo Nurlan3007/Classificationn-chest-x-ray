@@ -38,7 +38,7 @@ datasets/
 
 ## 🧠 Model
 - Implemented using **PyTorch** and **Torchvision**.
-- CNN and transfer learning approaches (e.g., ResNet18) were tested.
+- Custom CNN and learning approaches were tested.
 - Fine-tuning was applied with weighted loss to handle class imbalance.
   
 1. Convolutional Layers
