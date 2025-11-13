@@ -50,9 +50,9 @@ datasets/
 
 | Class         | Precision | Recall | F1-score |
 |----------------|------------|---------|----------|
-| Normal         | 0.64 | 0.81 | 0.71 |
-| Pneumonia      | 0.79 | 0.96 | 0.87 |
-| Tuberculosis   | 0.95 | 0.62 | 0.75 |
+| Normal         | 0.64 | 0.81 | 0.71 |   0.73
+| Pneumonia      | 0.79 | 0.96 | 0.87 |   0.85       
+| Tuberculosis   | 0.95 | 0.62 | 0.75 |   0.75 
 | **Accuracy**   |     |     | **0.76** |
 
 Best performance achieved after fine-tuning with class weights and reduced learning rate.  
@@ -69,5 +69,33 @@ Model showed high recall for Pneumonia and strong precision for Tuberculosis.
 ---
 
 ## 📂 Project Structure
+finalAML/
+│
+├── __pycache__/                # Python cache files
+├── best_model/                 # Best model weights (.pth)
+│   └── best23.pth
+├── checkpoints/                # Intermediate checkpoints
+│   ├── checkpoint_epoch_10.pth
+│   ├── checkpoint_epoch_20.pth
+│   └── ...
+├── datasets/                   # Dataset root directory
+│   ├── train/
+│   │   ├── Normal/
+│   │   ├── Pneumonia/
+│   │   └── Tuberculosis/
+│   ├── val/
+│   │   ├── Normal/
+│   │   ├── Pneumonia/
+│   │   └── Tuberculosis/
+│   └── test/
+│       ├── Normal/
+│       ├── Pneumonia/
+│       └── Tuberculosis/
+│   └── data.yaml               # Dataset metadata
+│
+├── main.ipynb                  # Main Jupyter notebook (training + evaluation)
+├── streamlit_deployed.py       # Streamlit app for model demo
+├── README.md                   # Project description (this file)
+└── metrics_report.pdf           # Results and visualizations
 
 
