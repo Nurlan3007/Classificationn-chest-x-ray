@@ -61,11 +61,6 @@ Result: Enables learning of complex patterns
 Purpose: Regularization to prevent overfitting
 Implementation: Dropout(0.5) and Dropout(0.3)
 Result: Better generalization to unseen data
-6. Data Augmentation
-Purpose: Increase training data diversity
-Implementation: Random transformations during training
-Result: Improved model robustness and generalization
-
 
 
 ---
