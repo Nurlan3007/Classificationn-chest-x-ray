@@ -1,5 +1,7 @@
 # Chest X-Ray Classification using CNN
 
+## link for database: https://drive.google.com/file/d/1CPZM7OmIJUaAJhAP460Epcfu2xonW4uA/view?usp=sharing
+
 ## Overview
 This project aims to build a deep learning model capable of classifying chest X-ray images into three categories:  
 **Normal**, **Pneumonia**, and **Tuberculosis**.  
