@@ -6,6 +6,9 @@ This project aims to build a deep learning model capable of classifying chest X-
 The goal is to assist medical professionals in early diagnosis through automated image analysis.
 
 ---
+## Team
+Nurlan Marat, Aiym Tleuberdinova, Amina Rysbekova
+---
 
 ## Project Workflow
 ### 1. Data Preparation
